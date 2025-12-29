@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+     url('https://storage.bhs.cloud.ovh.net/v1/AUTH_67da374e12f7497491105aaeeebf4835/public/blog/Meal-Kits-2__3__.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.text-container.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.page-transition.fade-out {
+    opacity: 0;
+    transform: translateY(-40px);
+}
+
+.background-container.fade-out {
+    opacity: 0;
+    transform: translateY(-40px);
+}
+
+.text-container.fade-out {
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.welcome-text {
+    font-family: 'Sacramento', cursive;
+    font-weight: 500;
+    font-size: 10rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    line-height: 1;
+    margin-bottom: 10px;
+    color: beige;
+    filter: none !important;
+}
+
+.daily-bites {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 300;
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    line-height: 1;
+    font-style: italic;
+    color: beige;
+    filter: none !important;
+    margin-top: -35px;
+}
+
+@media (max-width: 768px) {
+    .welcome-text {
+        font-size: 3.5rem;
+        margin-bottom: 6px;
+    }
+
+    .daily-bites {
+        font-size: 1.6rem;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-text {
+        font-size: 2.7rem;
+        margin-bottom: 4px;
+    }
+
+    .daily-bites {
+        font-size: 1.4rem;
+        margin-top: -6px;
+    }
+
+    .text-container {
+        padding: 0 1rem;
+    }
+}

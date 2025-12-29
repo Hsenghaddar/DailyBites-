@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DailyBites is a smart meal planner and recipe organizer that helps you plan weekly meals, discover recipes, and generate grocery lists in one place.">
+    <meta name="keywords" content="DailyBites, meal planner, recipes, weekly meals, grocery list, healthy eating">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>DailyBites • My Recipes</title>
+    <link rel="stylesheet" href="../layout/css/base.css">
+    <link rel="stylesheet" href="../css/customer.css">
+    <script src="../js/customer.js" defer></script>
+</head>
+<body>
+    <div data-include="nav"></div>
+    <main class="site">
+    <div class="wrap">
+    <h1>Create Custome Recipe</h1>
+    <p id="who"></p>
+
+    <!--new card form-->
+    <section class="panel">
+        <h2 id="addTitle">Add a Recipe</h2>
+
+        <form id="form" autocomplete="off">
+            <label class="col-span-2">Name
+                <input id="name" required placeholder="e.g., Zaatar Chicken Bowl">
+            </label>
+            <label>Image URL
+                <input id="image" type="url" placeholder="https://… (optional)">
+            </label>
+            <label>Difficulty
+            <select id="difficulty">
+                <option>Easy</option><option>Medium</option><option>Hard</option>
+            </select>
+            </label>
+
+            <label>Meal Category
+            <select id="meal_category">
+                <option>Breakfast</option><option>Lunch</option>
+                <option>Dinner</option><option>Snack</option>
+            </select>
+            </label>
+            <label>Diet Category
+            <select id="diet_category">
+                <option>Vegetarian</option><option>Vegan</option><option>Pescatarian</option>
+                <option>Low-Carb</option><option>High-Protein</option><option>Gluten-Free</option>
+            </select>
+            </label>
+
+            <label>Prep time (min)
+            <input id="prep_time" type="number" min="0" value="0">
+            </label>
+            <label>Cook time (min)
+            <input id="cook_time" type="number" min="0" value="0">
+            </label>
+            <label>Servings
+            <input id="servings" type="number" min="1" value="1">
+            </label>
+
+            <label>Calories
+            <input id="calories" type="number" min="0" value="0">
+            </label>
+            <label>Protein (g)
+            <input id="protein" type="number" min="0" value="0">
+            </label>
+            <label>Carbs (g)
+            <input id="carbs" type="number" min="0" value="0">
+            </label>
+            <label>Fat (g)
+            <input id="fat" type="number" min="0" value="0">
+            </label>
+
+            <label class="col-span-2">Description
+            <textarea id="description" placeholder="Short description…"></textarea>
+            </label>
+
+            <label class="col-span-2">Ingredients (one per line)
+            <textarea id="ingredients" placeholder="e.g., 200g chicken breast&#10;1 tbsp olive oil&#10;…"></textarea>
+            </label>
+
+            <label class="col-span-2">Instructions (one step per line)
+            <textarea id="instructions" placeholder="e.g., Season chicken…&#10;Grill 6–7 min per side…"></textarea>
+            </label>
+
+            <label class="col-span-2">Tags (comma separated)
+            <input id="tags" placeholder="healthy, quick, gluten-free">
+            </label>
+
+            <!-- micronutrients -->
+            <div class="col-span-2 kv">
+                <label>Fiber (g)
+                    <input id="fiber" type="number" min="0">
+                </label>
+                <label>Sodium (mg)
+                    <input id="sodium" type="number" min="0">
+                </label>
+                <label>Vitamin C
+                    <input id="vitaminC" placeholder="e.g., 25mg or 20%">
+                </label>
+                <label>Vitamin A / Iron / etc.
+                    <input id="extraMicro" placeholder='e.g., {"iron":"3mg"}'>
+                </label>
+            </div>
+        </form>
+        <div class="actions col-span-2">
+            <button type="submit" form="form" class="primary">Save to My Recipes</button>
+            <button type="button" id="resetForm" class="secondary">Clear my recipes</button>
+        </div>
+    </section>
+
+    <!--display cards-->
+    <section class="panel">
+        <h3 style="margin:0 0 8px;">My Recipes</h3>
+
+        <div class="grid">
+            <article class="card" id="preview">
+                <div class="media" id="pMedia">
+                    <div class="placeholder" id="pPH">DB</div>
+                </div>
+                <div class="body">
+                    <h3 id="pTitle">—</h3>
+                    <div class="meta">
+                    <span id="pTime">0m</span>
+                    <span id="pKcal">0 kcal</span>
+                    <span id="pTags"></span>
+                    </div>
+                    <p id="pDesc" style="margin:0;"></p>
+                </div>
+            </article>
+        </div>
+    </section>
+    </div>
+    </main>
+    <!-- Modal -->
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="backdrop" data-close></div>
+      <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+        <header>
+          <h3 id="mTitle">Recipe Details</h3>
+          <button class="close" data-close aria-label="Close">×</button>
+        </header>
+        <div class="content">
+          <div class="media"><img id="mImg" alt=""></div>
+          <p id="mDesc"></p>
+          <small id="mMeta" class="mono"></small>
+        </div>
+      </div>
+    </div>
+    <div data-include="footer"></div>
+    <script type="module" src="../js/reactMount.jsx"></script>
+</body>
+</html>

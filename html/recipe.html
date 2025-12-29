@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DailyBites • Recipe Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DailyBites is a smart meal planner and recipe organizer that helps you plan weekly meals, discover recipes, and generate grocery lists in one place.">
+    <meta name="keywords" content="DailyBites, meal planner, recipes, weekly meals, grocery list, healthy eating">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="stylesheet" href="../layout/css/base.css">
+    <link rel="stylesheet" href="../css/recipe.css">
+</head>
+
+<body>
+    <div data-include="nav"></div>
+
+    <!-- Original recipe page structure with all CSS classes -->
+    <main>
+
+        <section class="filters">
+
+            <input id="searchInput" class="search-bar" type="text"
+                placeholder="Search recipes or ingredients... (ie. carrot, onion)">
+
+            <section class="quick-row">
+                <button class="quick-pill">Quick & Easy</button>
+                <button class="quick-pill">Healthy</button>
+                <button class="quick-pill">Vegetarian</button>
+                <button class="quick-pill">High Protein</button>
+                <button class="quick-pill">Low Carb</button>
+
+                <button class="quick-pill" id="favoriteFilter">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                    </svg>
+                    Favorites
+                </button>
+            </section>
+
+            <section class="dropdown-row">
+
+                <section class="dd-box">
+                    <button class="dd-btn">Meal Type ▾</button>
+                    <section class="dd-panel">
+                    </section>
+                </section>
+                <section class="dd-box">
+                    <button class="dd-btn">Dietary ▾</button>
+                    <section class="dd-panel">
+                    </section>
+                </section>
+
+                <section class="dd-box">
+                    <button class="dd-btn">Time & Difficulty ▾</button>
+                    <section class="dd-panel">
+                    </section>
+                </section>
+
+            </section>
+
+            <section class="filter-actions" id="filterActions" style="display: none;">
+                <div class="filter-summary-row">
+                    <section class="filter-summary">
+                        <span class="icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#475569"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 4h18l-7 8v6l-4 2v-8L3 4z" />
+                            </svg>
+                        </span>
+                        <span id="filterCount">0 filters applied</span>
+                    </section>
+
+                    <button id="clearFilters" class="clear-filters-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M18 6L6 18M6 6l12 12"></path>
+                        </svg>
+                        Clear All Filters
+                    </button>
+                </div>
+            </section>
+
+        </section>
+
+        <output id="count">Showing 0 of 0 recipes</output>
+
+        <ul id="recipes" class="recipes"></ul>
+
+        <template id="card">
+            <li>
+                <article class="card">
+                    <figure class="thumb">
+                        <img alt="" loading="lazy">
+                        <button type="button" class="fav" title="Save">&#9825;</button>
+                        <span class="badge"></span>
+                    </figure>
+                    <section class="content">
+                        <h3 class="title"></h3>
+                        <p class="desc"></p>
+                        <ul class="meta">
+                            <li title="Total time"><time></time></li>
+                            <li title="Calories"><output></output> cal</li>
+                            <li title="Rating"><output></output></li>
+                        </ul>
+                        <div class="tags"></div>
+                    </section>
+                    <footer class="actions">
+                        <a href="#" rel="recipe" class="primary">View Recipe</a>
+                        <button type="button" class="ghost">Add to Plan</button>
+                    </footer>
+                </article>
+            </li>
+        </template>
+    </main>
+    <dialog id="modal">
+        <section class="modal-container">
+            <section class="modal-header">
+                <img id="mImg" alt="Recipe image">
+                <button type="button" class="fav modal-fav" title="Save">&#9825;</button>
+                <button id="mClose" class="modal-close">✕</button>
+            </section>
+
+            <section class="modal-content">
+                <h2 id="mTitle">Grilled Chicken Salad</h2>
+                <p id="mDesc" class="modal-desc">A fresh and healthy grilled chicken salad packed with greens,
+                    avocado, and a tangy lemon dressing.</p>
+
+                <section class="modal-stats">
+                    <div class="stat-item">
+                        <span class="stat-value" id="mTime">25 min</span>
+                        <span class="stat-label">Total Time</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="mCal">350 cal</span>
+                        <span class="stat-label">Calories</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="mServ">4 servings</span>
+                        <span class="stat-label">Servings</span>
+                    </div>
+                </section>
+
+                <section class="servings-actions">
+                    <div class="servings-info">
+                        <strong>Servings:</strong>
+                        <span id="mServingsCount">4</span>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="share-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                <polyline points="16 6 12 2 8 6"></polyline>
+                                <line x1="12" y1="2" x2="12" y2="15"></line>
+                            </svg>
+                            Share
+                        </button>
+                    </div>
+                </section>
+
+                <section class="modal-extra-details">
+                    <div class="detail-column">
+                        <p><strong>Rating:</strong> <span id="mRating"></span></p>
+                        <p><strong>Meal:</strong> <span id="mMeal"></span></p>
+                        <p><strong>Difficulty:</strong> <span id="mDiff"></span></p>
+                    </div>
+                    <div class="detail-column">
+                        <p><strong>Views:</strong> <span id="mViews"></span></p>
+                        <p><strong>Diet:</strong> <span id="mDiet"></span></p>
+                    </div>
+                </section>
+
+                <section class="modal-nutrition">
+                    <h3>Nutrition per serving</h3>
+                    <div class="macro-row">
+                        <div class="macro-item">
+                            <span class="label">Protein</span>
+                            <span class="value" id="mProt"></span>
+                        </div>
+                        <div class="macro-item">
+                            <span class="label">Carbs</span>
+                            <span class="value" id="mCarbs"></span>
+                        </div>
+                        <div class="macro-item">
+                            <span class="label">Fat</span>
+                            <span class="value" id="mFat"></span>
+                        </div>
+                    </div>
+                    <ul id="mMicros" class="micro-list"></ul>
+                </section>
+
+                <section class="modal-tags">
+                    <h3>Tags</h3>
+                    <div id="mTags" class="tags"></div>
+                </section>
+
+                <section class="ingredients-section">
+                    <h3>Ingredients</h3>
+                    <ul id="mIngr" class="ingredients-list">
+                    </ul>
+                </section>
+
+                <section class="instructions-section">
+                    <h3>Instructions</h3>
+                    <ol id="mInstr" class="instructions-list">
+                    </ol>
+                </section>
+            </section>
+        </section>
+    </dialog>
+
+    <dialog id="tagDialog" class="tag-dialog">
+        <section id="tagDialogContent"></section>
+    </dialog>
+    <div data-include="footer"></div>
+    <script type="module" src="../js/recipe.js"></script>
+    <script type="module" src="../js/reactMount.jsx"></script>
+</body>
+
+</html>

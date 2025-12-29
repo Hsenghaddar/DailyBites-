@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DailyBites is a smart meal planner and recipe organizer that helps you plan weekly meals, discover recipes, and generate grocery lists in one place.">
+    <meta name="keywords" content="DailyBites, meal planner, recipes, weekly meals, grocery list, healthy eating">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="icon" href="../assets/plate.png" type="image/png">
+    <script src="https://code.jquery.com/jquery-4.0.0-rc.1.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="../js/auth.js" defer></script>
+    <title>DailyBites • Login/Signup</title>
+</head>
+
+<body>
+    
+    <main>
+        <section class="display">
+
+        </section>
+        <section class="auth login">
+            <img src="../assets/logoo.png" alt="DailyBites">
+            <h2>Welcome Back to DailyBites</h2>
+            <div class="auth-toggle">
+                <button class="toggle-btn loginTab active">Login</button>
+                <button class="toggle-btn signupTab">Sign up</button>
+            </div>
+            <form class="loginForm">
+                <div class="input-group">
+                    <i class="bi bi-envelope"></i>
+                    <input class="email" type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="bi bi-lock"></i>
+                    <input class="password" type="password" placeholder="Password" required>
+                    <i class="bi-eye bi  show-pass"></i>
+                    <i class="bi-eye-slash bi  hide-pass"></i>
+                </div>
+                <p class="error"></p>
+                <button class="btn-17 loginBtn">
+                    <span class="text-container">
+                        <span class="text">Log in</span>
+                    </span>
+                </button>
+            </form>
+            <p class="txt">Dont have an account? <button class="signupPageBtn">Sign up</button></p>
+        </section>
+        <section class="auth signup">
+            <img src="../assets/logoo.png" alt="DailyBites">
+            <h2>Create an Account</h2>
+            <div class="auth-toggle">
+                <button class="toggle-btn loginTab active">Login</button>
+                <button class="toggle-btn signupTab">Sign up</button>
+            </div>  
+            
+            <form class="signupForm">
+                <div class="input-group">
+                    <i class="bi bi-person"></i>
+                    <input class="username" type="text" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <i class="bi bi-envelope"></i>
+                    <input class="email" type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="bi bi-lock"></i>
+                    <input class="password" type="password" placeholder="Password" required>
+                    <i class="bi-eye bi show-pass"></i>
+                    <i class="bi-eye-slash bi hide-pass"></i>
+                </div>
+                <p class="error"></p>
+                <button class="btn-17 signupBtn">
+                    <span class="text-container">
+                        <span class="text">Sign up</span>
+                    </span>
+                </button>
+            </form>
+            <p class="txt">Already have an account? <button class="loginPageBtn">Log in</button></p>
+        </section>
+    </main>
+</body>
+
+</html>

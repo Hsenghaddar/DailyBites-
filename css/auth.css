@@ -1,0 +1,359 @@
+:root {
+    --main-color: rgb(191, 227, 196);
+    --secondary-color: #009353;
+    --heading-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', Georgia, serif;
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background-image: url("../assets/background\ \(2\).jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    width: 70%;
+    height: 80%;
+    border-radius: 18px;
+    background: rgba(191, 227, 196, 0.85);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    padding: 20px;
+    gap: 40px;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+}
+
+.display {
+    background-image: url("../assets/Recipe\ book-bro.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    height: 100%;
+    width: 50%;
+}
+
+.auth {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.auth img {
+    position: absolute;
+    width: 200px;
+}
+
+.auth h2 {
+    white-space: nowrap;
+    color: var(--heading-color);
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.signup {
+    display: none;
+}
+.signup.show {
+    display: flex;
+}
+.txt {
+    color: white;
+    margin-top: 40px;
+}
+
+.signupPageBtn,
+.loginPageBtn {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    font-size: 15px;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-17 {
+    background-color: rgba(255, 255, 255, 0.7);
+    white-space: nowrap;
+    color: black;
+    background-image: none;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    border-radius: 99rem;
+    border-width: 2px;
+    padding: 0.8rem 3rem;
+    z-index: 0;
+}
+
+.btn-17,
+.btn-17 .text-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-17 .text-container {
+    display: block;
+}
+
+.btn-17 .text {
+    display: block;
+    position: relative;
+}
+
+.btn-17:hover .text {
+    animation: move-up-alternate 0.3s forwards;
+}
+
+.btn-17:after,
+.btn-17:before {
+    --skew: 0.2;
+    background: #00935380;
+    content: "";
+    display: block;
+    height: 102%;
+    left: calc(-50% - 50% * var(--skew));
+    pointer-events: none;
+    position: absolute;
+    top: -104%;
+    transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+    transition: transform 0.2s ease;
+    width: 100%;
+}
+
+.btn-17:after {
+    --progress: 0%;
+    left: calc(50% + 50% * var(--skew));
+    top: 102%;
+    z-index: -1;
+}
+
+.btn-17:hover {
+    color: white;
+}
+
+.btn-17:hover:before {
+    --progress: 100%;
+}
+
+.btn-17:hover:after {
+    --progress: -102%;
+}
+
+input {
+    width: 80%;
+    border: none;
+    margin-bottom: 20px;
+    padding: 15px 37px;
+    border-radius: 999px;
+    background-color: rgb(215, 249, 219);
+    color: var(--secondary-color);
+}
+
+input:focus,
+input:hover {
+    outline: none;
+    box-shadow: 0 0 0 4px #00935330;
+}
+
+::placeholder {
+    color: #009353;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-group i:first-child {
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+[class^="bi-eye"] {
+    right: 12%;
+    position: absolute;
+    color: var(--secondary-color);
+    font-size: 25px;
+    top: 11px;
+    cursor: pointer;
+}
+.show-pass{
+    display: none;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.error {
+    color: red;
+    display: none;
+    background-color: #ffe6e6;
+    border: 1px solid #ff4d4d;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.auth-toggle {
+  display: inline-flex;
+  padding: 4px;
+  background: #f3f4f6;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+.toggle-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+  background: transparent;
+  cursor: pointer;
+  color: #555;
+  transition: 0.2s ease;
+}
+.toggle-btn.active {
+  background: #16a34a;
+  color: white;
+  box-shadow: 0 8px 16px rgba(22, 163, 74, 0.4);
+}
+
+.auth {
+  animation: fade 0.2s ease;
+}
+
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width:1350px) {
+    main {
+        width: 80%;
+    }
+
+    .auth h2 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    main {
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: fit-content;
+    }
+
+    .display {
+        display: none;
+    }
+
+    .auth {
+        width: 100%;
+    }
+
+    .auth h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    main {
+        width: 350px;
+    }
+
+    .auth h2 {
+        font-size: 23px;
+    }
+
+    .btn-17 {
+        width: fit-content;
+        z-index: 90;
+    }
+}
+
+@-webkit-keyframes move-up-alternate {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(80%);
+    }
+
+    51% {
+        transform: translateY(-80%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes move-up-alternate {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(80%);
+    }
+
+    51% {
+        transform: translateY(-80%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

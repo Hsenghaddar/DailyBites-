@@ -1,0 +1,910 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "email": "user@gmail.com",
+      "password": "user123"
+    }
+  ],
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Grilled Chicken Salad",
+      "image": "https://www.dinneratthezoo.com/wp-content/uploads/2020/12/grilled-chicken-salad-4.jpg",
+      "description": "A fresh and healthy grilled chicken salad packed with greens, avocado, and a tangy lemon dressing.",
+      "ingredients": [
+        "200g chicken breast",
+        "1 avocado, sliced",
+        "2 cups mixed greens",
+        "1 tbsp olive oil",
+        "1 tbsp lemon juice",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Season chicken with salt, pepper, and olive oil.",
+        "Grill on medium heat for 6–7 minutes per side until cooked.",
+        "In a bowl, combine greens and avocado slices.",
+        "Slice chicken and place on top; drizzle with lemon juice before serving."
+      ],
+      "rating": 4.7,
+      "views": 1250,
+      "prep_time": 10,
+      "cook_time": 15,
+      "servings": 2,
+      "calories": 350,
+      "protein": 32,
+      "carbs": 10,
+      "fat": 20,
+      "micronutrients": {
+        "fiber": 4,
+        "sodium": 310,
+        "vitaminC": "25mg"
+      },
+      "tags": [
+        "healthy",
+        "quick",
+        "gluten-free"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Lunch",
+      "diet_category": "Low-Carb"
+    },
+    {
+      "id": 2,
+      "name": "Spaghetti Bolognese",
+      "image": "https://feelgoodfoodie.net/wp-content/uploads/2023/04/Pasta-Bolognese-TIMG.jpg",
+      "description": "Classic Italian-style pasta with rich tomato and beef sauce, simmered to perfection.",
+      "ingredients": [
+        "250g spaghetti",
+        "200g ground beef",
+        "1 onion, chopped",
+        "2 garlic cloves, minced",
+        "400g canned tomatoes",
+        "2 tbsp olive oil",
+        "Salt and herbs to taste"
+      ],
+      "instructions": [
+        "Cook spaghetti according to package instructions.",
+        "In a pan, heat olive oil and sauté onion and garlic until fragrant.",
+        "Add beef and cook until browned.",
+        "Pour in tomatoes and simmer for 15 minutes.",
+        "Serve sauce over spaghetti and garnish with herbs."
+      ],
+      "rating": 4.8,
+      "views": 3120,
+      "prep_time": 15,
+      "cook_time": 30,
+      "servings": 3,
+      "calories": 600,
+      "protein": 28,
+      "carbs": 65,
+      "fat": 20,
+      "micronutrients": {
+        "iron": "3mg",
+        "vitaminA": "15%",
+        "fiber": 6
+      },
+      "tags": [
+        "italian",
+        "comfort food",
+        "family meal"
+      ],
+      "difficulty": "Medium",
+      "meal_category": "Dinner",
+      "diet_category": "High-Protein"
+    },
+    {
+      "id": 3,
+      "name": "Overnight Oats with Berries",
+      "image": "https://thedeliciousplate.com/wp-content/uploads/2025/02/Berry-cheesecake-overnight-oats-10.jpg",
+      "description": "Creamy overnight oats topped with mixed berries and honey for a delicious breakfast.",
+      "ingredients": [
+        "1/2 cup rolled oats",
+        "1/2 cup milk or almond milk",
+        "1 tbsp chia seeds",
+        "1 tsp honey",
+        "1/2 cup mixed berries"
+      ],
+      "instructions": [
+        "In a jar, mix oats, milk, chia seeds, and honey.",
+        "Refrigerate overnight or at least 6 hours.",
+        "Top with berries before serving."
+      ],
+      "rating": 4.5,
+      "views": 890,
+      "prep_time": 5,
+      "cook_time": 0,
+      "servings": 1,
+      "calories": 280,
+      "protein": 9,
+      "carbs": 45,
+      "fat": 7,
+      "micronutrients": {
+        "fiber": 7,
+        "vitaminC": "20mg",
+        "calcium": "120mg"
+      },
+      "tags": [
+        "breakfast",
+        "vegan",
+        "high-fiber"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Breakfast",
+      "diet_category": "Vegan"
+    },
+    {
+      "id": 4,
+      "name": "Avocado Toast with Egg",
+      "image": "https://www.aberdeenskitchen.com/wp-content/uploads/2019/05/Avocado-Egg-Breakfast-Toast-FI-Thumbnail-1200X1200.jpg",
+      "description": "Crunchy whole-grain toast topped with creamy avocado and a perfectly fried egg.",
+      "ingredients": [
+        "2 slices whole-grain bread",
+        "1 ripe avocado",
+        "2 eggs",
+        "Salt, pepper, and chili flakes to taste"
+      ],
+      "instructions": [
+        "Toast the bread until crispy.",
+        "Mash avocado and season with salt and pepper.",
+        "Fry eggs sunny side up.",
+        "Spread avocado on toast and top with eggs and chili flakes."
+      ],
+      "rating": 4.9,
+      "views": 2400,
+      "prep_time": 5,
+      "cook_time": 10,
+      "servings": 2,
+      "calories": 380,
+      "protein": 14,
+      "carbs": 25,
+      "fat": 22,
+      "micronutrients": {
+        "fiber": 6,
+        "potassium": "480mg",
+        "vitaminB6": "0.4mg"
+      },
+      "tags": [
+        "breakfast",
+        "brunch",
+        "high-protein"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Breakfast",
+      "diet_category": "Vegetarian"
+    },
+    {
+      "id": 5,
+      "name": "Quinoa Buddha Bowl",
+      "image": "https://biancazapatka.com/wp-content/uploads/2021/07/buddha-bowl-mediterran.jpg",
+      "description": "A nutrient-packed vegan bowl with quinoa, chickpeas, roasted veggies, and tahini sauce.",
+      "ingredients": [
+        "1 cup cooked quinoa",
+        "1/2 cup roasted chickpeas",
+        "1/2 cup roasted sweet potatoes",
+        "1/4 cup tahini sauce",
+        "Mixed greens and seeds for garnish"
+      ],
+      "instructions": [
+        "Arrange quinoa, chickpeas, and veggies in a bowl.",
+        "Drizzle tahini sauce over the top.",
+        "Garnish with greens and seeds."
+      ],
+      "rating": 4.6,
+      "views": 970,
+      "prep_time": 15,
+      "cook_time": 25,
+      "servings": 2,
+      "calories": 420,
+      "protein": 15,
+      "carbs": 55,
+      "fat": 14,
+      "micronutrients": {
+        "fiber": 9,
+        "iron": "3.5mg",
+        "magnesium": "120mg"
+      },
+      "tags": [
+        "vegan",
+        "balanced",
+        "bowl"
+      ],
+      "difficulty": "Medium",
+      "meal_category": "Lunch",
+      "diet_category": "Vegan"
+    },
+    {
+      "id": 6,
+      "name": "Shakshuka with Feta",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2021/08/Feta-and-roasted-tomato-shakshuka-ce25544.jpg?quality=90&resize=708,643",
+      "description": "Tomato-pepper skillet with poached eggs and crumbled feta—perfect for brunch.",
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 onion, chopped",
+        "1 red bell pepper, sliced",
+        "2 garlic cloves, minced",
+        "1 tsp paprika",
+        "1/2 tsp cumin",
+        "400g canned tomatoes",
+        "4 eggs",
+        "40g feta, crumbled",
+        "Salt, pepper, parsley"
+      ],
+      "instructions": [
+        "Sauté onion and pepper in olive oil until soft; add garlic and spices for 30 seconds.",
+        "Pour in tomatoes; simmer 8–10 minutes to thicken.",
+        "Make 4 wells and crack in eggs; cover and cook until whites set.",
+        "Top with feta and parsley; season to taste."
+      ],
+      "rating": 4.7,
+      "views": 1320,
+      "prep_time": 10,
+      "cook_time": 15,
+      "servings": 2,
+      "calories": 360,
+      "protein": 20,
+      "carbs": 18,
+      "fat": 22,
+      "micronutrients": {
+        "fiber": 4,
+        "vitaminA": "30%",
+        "sodium": 520
+      },
+      "tags": [
+        "brunch",
+        "skillet",
+        "comfort"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Breakfast",
+      "diet_category": "Vegetarian"
+    },
+    {
+      "id": 7,
+      "name": "Lebanese Lentil Soup",
+      "image": "https://pickyeaterblog.com/wp-content/uploads/2022/12/lebanese-lentil-soup.jpg",
+      "description": "Smooth red-lentil soup with cumin, turmeric, and lemon—hearty and light.",
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 onion, chopped",
+        "1 carrot, diced",
+        "1 cup red lentils, rinsed",
+        "1 tsp cumin",
+        "1/2 tsp turmeric",
+        "4 cups vegetable broth",
+        "Juice of 1/2 lemon",
+        "Salt and pepper"
+      ],
+      "instructions": [
+        "Sauté onion and carrot in oil until soft.",
+        "Add lentils, spices, and broth; simmer 15–18 minutes until lentils break down.",
+        "Blend (optional) for a smoother texture; finish with lemon, salt, and pepper."
+      ],
+      "rating": 4.6,
+      "views": 2110,
+      "prep_time": 10,
+      "cook_time": 20,
+      "servings": 4,
+      "calories": 220,
+      "protein": 12,
+      "carbs": 34,
+      "fat": 4,
+      "micronutrients": {
+        "fiber": 9,
+        "iron": "4mg",
+        "potassium": "420mg"
+      },
+      "tags": [
+        "soup",
+        "meal-prep",
+        "gluten-free"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Dinner",
+      "diet_category": "Vegan"
+    },
+    {
+      "id": 8,
+      "name": "Baked Salmon with Garlic & Herbs",
+      "image": "https://cdn.momsdish.com/wp-content/uploads/2021/05/Garlic-Herb-Roasted-Salmon012.jpg",
+      "description": "Flaky salmon fillets baked with garlic, lemon, and fresh herbs—simple and elegant.",
+      "ingredients": [
+        "2 salmon fillets (120–150g each)",
+        "1 tbsp olive oil",
+        "2 garlic cloves, minced",
+        "1 tbsp lemon juice",
+        "Fresh dill or parsley",
+        "Salt and pepper"
+      ],
+      "instructions": [
+        "Preheat oven to 200°C (400°F).",
+        "Place salmon on a lined tray; rub with oil, garlic, lemon, salt, and pepper.",
+        "Bake 10–12 minutes until just opaque; garnish with herbs."
+      ],
+      "rating": 4.8,
+      "views": 1750,
+      "prep_time": 5,
+      "cook_time": 12,
+      "servings": 2,
+      "calories": 390,
+      "protein": 34,
+      "carbs": 1,
+      "fat": 26,
+      "micronutrients": {
+        "omega3": "1.8g",
+        "selenium": "55mcg",
+        "vitaminD": "15mcg"
+      },
+      "tags": [
+        "pescatarian",
+        "sheet-pan",
+        "low-carb"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Dinner",
+      "diet_category": "Pescatarian"
+    },
+    {
+      "id": 9,
+      "name": "Veggie Tofu Stir-Fry",
+      "image": "https://jessicainthekitchen.com/wp-content/uploads/2022/07/Vegan-Stir-Fry01030.jpg",
+      "description": "Crispy tofu tossed with colorful vegetables in a light soy-ginger sauce.",
+      "ingredients": [
+        "200g firm tofu, cubed",
+        "1 tbsp cornstarch",
+        "2 tbsp neutral oil, divided",
+        "1 cup broccoli florets",
+        "1 red bell pepper, sliced",
+        "1 carrot, sliced",
+        "2 tbsp soy sauce",
+        "1 tbsp rice vinegar",
+        "1 tsp grated ginger",
+        "1 tsp honey or maple syrup",
+        "1 garlic clove, minced"
+      ],
+      "instructions": [
+        "Toss tofu with cornstarch; pan-fry in 1 tbsp oil until golden, then remove.",
+        "Stir-fry veggies in remaining oil 3–4 minutes.",
+        "Whisk soy, vinegar, ginger, honey, and garlic; return tofu and toss to coat 1–2 minutes."
+      ],
+      "rating": 4.5,
+      "views": 1480,
+      "prep_time": 10,
+      "cook_time": 12,
+      "servings": 2,
+      "calories": 320,
+      "protein": 18,
+      "carbs": 28,
+      "fat": 14,
+      "micronutrients": {
+        "fiber": 6,
+        "vitaminC": "60mg",
+        "calcium": "200mg"
+      },
+      "tags": [
+        "stir-fry",
+        "weeknight",
+        "budget"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Dinner",
+      "diet_category": "Vegan"
+    },
+    {
+      "id": 10,
+      "name": "Veggie Tacos",
+      "image": "https://www.twopeasandtheirpod.com/wp-content/uploads/2021/06/Veggie-Tacos4577.jpg",
+      "description": "Soft corn tortillas filled with sautéed vegetables, black beans, and avocado.",
+      "ingredients": [
+        "4 small corn tortillas",
+        "1 cup black beans, drained",
+        "1/2 red bell pepper, sliced",
+        "1/2 zucchini, sliced",
+        "1/2 onion, sliced",
+        "1 tbsp olive oil",
+        "1/2 tsp cumin",
+        "1/2 tsp paprika",
+        "Salt and pepper to taste",
+        "1/2 avocado, sliced",
+        "Fresh cilantro"
+      ],
+      "instructions": [
+        "Heat olive oil and sauté onion, bell pepper, and zucchini with cumin, paprika, salt, and pepper until tender.",
+        "Warm the tortillas.",
+        "Fill each tortilla with sautéed veggies and black beans.",
+        "Top with avocado slices and cilantro.",
+        "Serve immediately."
+      ],
+      "rating": 4.6,
+      "views": 1250,
+      "prep_time": 10,
+      "cook_time": 12,
+      "servings": 2,
+      "calories": 320,
+      "protein": 12,
+      "carbs": 40,
+      "fat": 14,
+      "micronutrients": {
+        "fiber": 10,
+        "vitaminC": "35mg",
+        "calcium": "80mg"
+      },
+      "tags": [
+        "vegan",
+        "quick",
+        "lunch"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Lunch",
+      "diet_category": "Vegan"
+    },
+    {
+      "id": 11,
+      "name": "Spaghetti Carbonara",
+      "image": "https://www.allrecipes.com/thmb/Vg2cRidr2zcYhWGvPD8M18xM_WY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/11973-spaghetti-carbonara-ii-DDMFS-4x3-6edea51e421e4457ac0c3269f3be5157.jpg",
+      "description": "Classic Italian pasta with creamy egg and pancetta sauce.",
+      "ingredients": [
+        "200g spaghetti",
+        "100g pancetta",
+        "2 eggs",
+        "50g parmesan cheese",
+        "2 cloves garlic",
+        "Salt",
+        "Black pepper"
+      ],
+      "instructions": [
+        "Cook spaghetti.",
+        "Fry pancetta with garlic.",
+        "Whisk eggs and cheese.",
+        "Combine pasta with pancetta and remove from heat.",
+        "Mix in egg mixture quickly.",
+        "Season with salt and pepper."
+      ],
+      "rating": 4.7,
+      "views": 2300,
+      "prep_time": 10,
+      "cook_time": 15,
+      "servings": 2,
+      "calories": 520,
+      "protein": 22,
+      "carbs": 60,
+      "fat": 20,
+      "micronutrients": {
+        "fiber": 3,
+        "vitaminC": "2mg",
+        "calcium": "150mg"
+      },
+      "tags": [
+        "pasta",
+        "italian",
+        "quick"
+      ],
+      "difficulty": "Medium",
+      "meal_category": "Dinner",
+      "diet_category": "Non-Vegetarian"
+    },
+    {
+      "id": 12,
+      "name": "Sweet Potato & Black Bean Chili",
+      "image": "https://www.eatingwell.com/thmb/OhhPr2WJ8dLmV3mtf8A8JY8hc-8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sweet-potato-black-bean-chili-250222-1x1-2a859b9966af411c9a145a406adcad8a.jpg",
+      "description": "Hearty vegan chili with sweet potatoes, black beans, and smoky spices.",
+      "ingredients": [
+        "2 sweet potatoes, diced",
+        "1 can black beans, drained",
+        "1 onion, chopped",
+        "2 garlic cloves, minced",
+        "1 can diced tomatoes",
+        "1 tsp smoked paprika",
+        "1 tsp cumin",
+        "2 cups vegetable broth",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Sauté onion and garlic until soft.",
+        "Add sweet potatoes, spices, and tomatoes; cook 5 minutes.",
+        "Pour in broth and simmer until potatoes are tender (20–25 min).",
+        "Add black beans, heat through, season, and serve."
+      ],
+      "rating": 4.6,
+      "views": 950,
+      "prep_time": 10,
+      "cook_time": 30,
+      "servings": 4,
+      "calories": 300,
+      "protein": 10,
+      "carbs": 50,
+      "fat": 6,
+      "tags": [
+        "vegan",
+        "gluten-free",
+        "comfort food"
+      ],
+      "difficulty": "Medium",
+      "meal_category": "Dinner",
+      "diet_category": "Vegan"
+    },
+    {
+      "id": 13,
+      "name": "Chicken Curry",
+      "image": "https://spicecravings.com/wp-content/uploads/2025/07/Coconut-Curry-Chicken-New-Featured.jpg",
+      "description": "Tender chicken in a flavorful and spicy curry sauce.",
+      "ingredients": [
+        "500g chicken breast",
+        "1 onion",
+        "2 cloves garlic",
+        "1 tbsp ginger",
+        "2 tbsp curry powder",
+        "400ml coconut milk",
+        "2 tbsp oil",
+        "Salt",
+        "Pepper",
+        "Cilantro"
+      ],
+      "instructions": [
+        "Heat oil and sauté onion, garlic, and ginger.",
+        "Add chicken and brown.",
+        "Stir in curry powder.",
+        "Add coconut milk and simmer until chicken is cooked.",
+        "Garnish with cilantro and serve."
+      ],
+      "rating": 4.8,
+      "views": 3200,
+      "prep_time": 15,
+      "cook_time": 25,
+      "servings": 4,
+      "calories": 400,
+      "protein": 30,
+      "carbs": 10,
+      "fat": 25,
+      "micronutrients": {
+        "fiber": 3,
+        "vitaminC": "15mg",
+        "calcium": "50mg"
+      },
+      "tags": [
+        "curry",
+        "spicy",
+        "dinner"
+      ],
+      "difficulty": "Medium",
+      "meal_category": "Dinner",
+      "diet_category": "Non-Vegetarian"
+    },
+    {
+      "id": 14,
+      "name": "Greek Salad",
+      "image": "https://downshiftology.com/wp-content/uploads/2018/08/How-To-Make-Greek-Salad-2.jpg",
+      "description": "Fresh and colorful salad with feta, olives, and vegetables.",
+      "ingredients": [
+        "2 cups chopped cucumber",
+        "1 cup cherry tomatoes",
+        "1/2 red onion",
+        "1/2 cup feta cheese",
+        "1/4 cup olives",
+        "2 tbsp olive oil",
+        "1 tbsp red wine vinegar",
+        "Salt",
+        "Pepper",
+        "Oregano"
+      ],
+      "instructions": [
+        "Chop vegetables.",
+        "Mix olive oil, vinegar, salt, pepper, and oregano for dressing.",
+        "Toss vegetables with dressing.",
+        "Add feta and olives on top."
+      ],
+      "rating": 4.4,
+      "views": 1120,
+      "prep_time": 10,
+      "cook_time": 0,
+      "servings": 2,
+      "calories": 220,
+      "protein": 6,
+      "carbs": 10,
+      "fat": 18,
+      "micronutrients": {
+        "fiber": 3,
+        "vitaminC": "25mg",
+        "calcium": "100mg"
+      },
+      "tags": [
+        "salad",
+        "healthy",
+        "quick"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Lunch",
+      "diet_category": "Vegetarian"
+    },
+    {
+      "id": 15,
+      "name": "Banana Pancakes",
+      "image": "https://img.taste.com.au/L_9PA2m8/taste/2019/07/3-ingredient-banana-pancakes-151444-1.jpg",
+      "description": "Fluffy banana pancakes perfect for breakfast or brunch.",
+      "ingredients": [
+        "1 cup flour",
+        "1 tbsp sugar",
+        "1 tsp baking powder",
+        "1/2 tsp baking soda",
+        "1/4 tsp salt",
+        "1 cup milk",
+        "1 egg",
+        "2 ripe bananas",
+        "2 tbsp melted butter",
+        "Maple syrup"
+      ],
+      "instructions": [
+        "Mash bananas and mix with milk, egg, and melted butter.",
+        "Combine dry ingredients in a bowl.",
+        "Mix wet and dry ingredients.",
+        "Cook pancakes on a greased skillet until golden.",
+        "Serve with maple syrup."
+      ],
+      "rating": 4.6,
+      "views": 1450,
+      "prep_time": 10,
+      "cook_time": 15,
+      "servings": 2,
+      "calories": 350,
+      "protein": 8,
+      "carbs": 55,
+      "fat": 12,
+      "micronutrients": {
+        "fiber": 4,
+        "vitaminC": "5mg",
+        "calcium": "150mg"
+      },
+      "tags": [
+        "breakfast",
+        "sweet",
+        "easy"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Breakfast",
+      "diet_category": "Vegetarian"
+    },
+    {
+      "id": 16,
+      "name": "Mediterranean Chickpea Wrap",
+      "image": "https://chefkatef.com/wp-content/uploads/2024/03/roated-cauliflower-chickpea-mediterranean-wrap.jpg",
+      "description": "Quick wrap filled with chickpeas, cucumber, tomato, hummus, and greens.",
+      "ingredients": [
+        "1 cup cooked chickpeas",
+        "2 whole wheat tortillas",
+        "1/2 cup chopped cucumber",
+        "1/2 cup cherry tomatoes, halved",
+        "2 tbsp hummus",
+        "Handful of mixed greens",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Mash chickpeas lightly and season with salt and pepper.",
+        "Spread hummus on tortillas.",
+        "Add chickpeas, cucumber, tomato, and greens.",
+        "Roll tightly and slice in half to serve."
+      ],
+      "rating": 4.5,
+      "views": 700,
+      "prep_time": 10,
+      "cook_time": 0,
+      "servings": 2,
+      "calories": 320,
+      "protein": 12,
+      "carbs": 45,
+      "fat": 10,
+      "tags": [
+        "vegan",
+        "quick",
+        "lunch"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Lunch",
+      "diet_category": "Vegan"
+    },
+    {
+      "id": 17,
+      "name": "Lemon Garlic Shrimp Pasta",
+      "image": "https://www.feastingathome.com/wp-content/uploads/2023/11/Shrimp-Pasta-8.jpg",
+      "description": "Light pasta with shrimp, lemon, garlic, and parsley.",
+      "ingredients": [
+        "200g spaghetti",
+        "200g shrimp, peeled",
+        "2 garlic cloves, minced",
+        "1 tbsp olive oil",
+        "1 tbsp butter",
+        "Juice of 1 lemon",
+        "2 tbsp chopped parsley",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Cook pasta according to package instructions.",
+        "Sauté garlic in olive oil and butter, then add shrimp until pink.",
+        "Add lemon juice and parsley, toss with pasta.",
+        "Season and serve."
+      ],
+      "rating": 4.8,
+      "views": 1200,
+      "prep_time": 10,
+      "cook_time": 15,
+      "servings": 2,
+      "calories": 450,
+      "protein": 25,
+      "carbs": 50,
+      "fat": 15,
+      "tags": [
+        "seafood",
+        "quick",
+        "dinner"
+      ],
+      "difficulty": "Medium",
+      "meal_category": "Dinner",
+      "diet_category": "Pescatarian"
+    },
+    {
+      "id": 18,
+      "name": "Mango Coconut Chia Pudding",
+      "image": "https://rachaelsgoodeats.com/wp-content/uploads/2023/07/IMG_8342-scaled.jpg",
+      "description": "Refreshing chia pudding topped with fresh mango and coconut flakes.",
+      "ingredients": [
+        "3 tbsp chia seeds",
+        "1 cup coconut milk",
+        "1 tsp vanilla extract",
+        "1 tsp honey or maple syrup",
+        "1/2 cup diced mango",
+        "1 tbsp coconut flakes"
+      ],
+      "instructions": [
+        "Mix chia seeds, coconut milk, vanilla, and sweetener in a bowl.",
+        "Refrigerate for at least 4 hours or overnight.",
+        "Top with mango and coconut before serving."
+      ],
+      "rating": 4.7,
+      "views": 850,
+      "prep_time": 5,
+      "cook_time": 0,
+      "servings": 2,
+      "calories": 250,
+      "protein": 5,
+      "carbs": 30,
+      "fat": 12,
+      "tags": [
+        "breakfast",
+        "vegan",
+        "dessert"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Breakfast",
+      "diet_category": "Vegan"
+    },
+    {
+      "id": 19,
+      "name": "Caprese Stuffed Avocados",
+      "image": "https://easyweeknightrecipes.com/wp-content/uploads/2021/07/Caprese-Avocados-8.jpg",
+      "description": "Ripe avocados stuffed with cherry tomatoes, mozzarella, and fresh basil drizzled with balsamic glaze.",
+      "ingredients": [
+        "2 ripe avocados",
+        "1 cup cherry tomatoes, halved",
+        "100g mozzarella balls, halved",
+        "Fresh basil leaves",
+        "1 tbsp balsamic glaze",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Cut avocados in half and remove the pit.",
+        "In a bowl, mix tomatoes, mozzarella, basil, salt, and pepper.",
+        "Scoop mixture into avocado halves.",
+        "Drizzle with balsamic glaze before serving."
+      ],
+      "rating": 4.7,
+      "views": 680,
+      "prep_time": 10,
+      "cook_time": 0,
+      "servings": 2,
+      "calories": 320,
+      "protein": 12,
+      "carbs": 14,
+      "fat": 24,
+      "tags": [
+        "vegetarian",
+        "quick",
+        "lunch"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Lunch",
+      "diet_category": "Vegetarian"
+    },
+    {
+      "id": 20,
+      "name": "Spicy Peanut Noodles",
+      "image": "https://plantedinthekitchen.com/wp-content/uploads/2021/11/Peanut-Noodles-1.jpg",
+      "description": "Savory noodles tossed in a creamy, spicy peanut sauce with vegetables.",
+      "ingredients": [
+        "200g rice noodles",
+        "1/2 cup peanut butter",
+        "2 tbsp soy sauce",
+        "1 tbsp sriracha",
+        "1 tbsp lime juice",
+        "1 tsp honey",
+        "1 cup shredded carrots",
+        "1 red bell pepper, sliced",
+        "2 green onions, chopped"
+      ],
+      "instructions": [
+        "Cook noodles according to package instructions and drain.",
+        "Whisk peanut butter, soy sauce, sriracha, lime juice, and honey.",
+        "Toss noodles with sauce and vegetables.",
+        "Garnish with green onions and serve."
+      ],
+      "rating": 4.8,
+      "views": 900,
+      "prep_time": 10,
+      "cook_time": 10,
+      "servings": 2,
+      "calories": 480,
+      "protein": 15,
+      "carbs": 60,
+      "fat": 20,
+      "tags": [
+        "vegan",
+        "quick",
+        "asian"
+      ],
+      "difficulty": "Easy",
+      "meal_category": "Dinner",
+      "diet_category": "Vegan"
+    },
+    {
+      "id": 21,
+      "name": "Miso Pineapple Glazed Tempeh Skewers",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/2/2019/06/Kebabs-7a3a418.jpg?quality=90&resize=708,643",
+      "ingredients": [
+        "200g tempeh, cut into cubes",
+        "1/2 cup pineapple juice",
+        "2 tbsp white miso paste",
+        "1 tbsp soy sauce",
+        "1 tbsp maple syrup",
+        "1 tsp sesame oil",
+        "1 red bell pepper, cut into squares",
+        "1 small zucchini, sliced",
+        "Skewers"
+      ],
+      "instructions": [
+        "Mix pineapple juice, miso paste, soy sauce, maple syrup, and sesame oil to make the glaze.",
+        "Marinate tempeh in half of the glaze for 30 minutes.",
+        "Thread tempeh, bell pepper, and zucchini onto skewers.",
+        "Brush with remaining glaze and grill or bake at 200°C (400°F) for 15–20 minutes until caramelized.",
+        "Serve hot with a sprinkle of sesame seeds."
+      ],
+      "rating": 4.9,
+      "views": 210,
+      "prep_time": 15,
+      "cook_time": 20,
+      "servings": 2,
+      "calories": 280,
+      "protein": 15,
+      "carbs": 22,
+      "fat": 14,
+      "micronutrients": {
+        "fiber": 5,
+        "vitaminC": "45mg",
+        "iron": "3mg"
+      },
+      "tags": [
+        "vegan",
+        "grill",
+        "summer",
+        "unique"
+      ],
+      "difficulty": "Medium",
+      "meal_category": "Lunch",
+      "diet_category": "Vegan"
+    }
+  ]
+}

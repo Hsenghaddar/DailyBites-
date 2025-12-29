@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DailyBites is a smart meal planner and recipe organizer that helps you plan weekly meals, discover recipes, and generate grocery lists in one place.">
+  <meta name="keywords" content="DailyBites, meal planner, recipes, weekly meals, grocery list, healthy eating">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="stylesheet" href="../css/mealPlanner.css">
+  <link rel="stylesheet" href="../layout/css/base.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+    integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <title>DailyBites • Plan Your Meals</title>
+</head>
+
+<body>
+  <div data-include="nav"></div>
+
+  <div id="mealplanner-root"></div>
+
+  <div class="overlay">
+    <div class="model">
+      <div class="modal-header">
+        <h2 class="modal-title">Choose a recipe</h2>
+        <i class="close bi bi-x-lg"></i>
+      </div>
+
+      <div class="input-group">
+        <i class="bi bi-search"></i>
+        <input class="search" type="text" placeholder="Search Recipes">
+      </div>
+
+      <div class="recipes"></div>
+    </div>
+  </div>
+
+  <div data-include="footer"></div>
+  <script type="module" src="../js/reactMount.jsx"></script>
+
+</body>
+
+</html>
